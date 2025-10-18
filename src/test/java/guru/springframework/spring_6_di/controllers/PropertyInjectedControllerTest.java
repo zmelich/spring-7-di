@@ -3,13 +3,18 @@ package guru.springframework.spring_6_di.controllers;
 import guru.springframework.spring_6_di.services.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest
 class PropertyInjectedControllerTest {
 
+    @Autowired
     PropertyInjectedController propertyInjectedController;
 
+    /*
     @BeforeEach
     void setUp() {
 
@@ -18,6 +23,7 @@ class PropertyInjectedControllerTest {
         //Check the way we reference to greetingService! Like a property (not like a field)
         propertyInjectedController.greetingService = new GreetingServiceImpl();
     }
+    */
 
     @Test
     void sayHello() {
