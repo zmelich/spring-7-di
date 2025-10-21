@@ -13,7 +13,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class DataSourceController {
 
-    public final DataSourceService dataSourceService;
+    private final DataSourceService dataSourceService;
 
     public DataSourceController(@Qualifier("DataSourceService") DataSourceService dataSourceService) {
         this.dataSourceService = dataSourceService;
