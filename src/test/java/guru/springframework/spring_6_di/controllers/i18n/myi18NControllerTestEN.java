@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-//@ActiveProfiles("EN")
+@ActiveProfiles("EN")
 @SpringBootTest
 public class myi18NControllerTestEN {
 
@@ -21,5 +21,4 @@ public class myi18NControllerTestEN {
     void sayHello(){
         System.out.println(myi18NController.sayHello());
     }
-
 }

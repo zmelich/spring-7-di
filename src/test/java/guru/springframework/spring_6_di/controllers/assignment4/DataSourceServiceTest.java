@@ -1,4 +1,4 @@
-package guru.springframework.spring_6_di.controllers.i18n;
+package guru.springframework.spring_6_di.controllers.assignment4;
 
 
 /*
@@ -10,15 +10,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles("ES")
 @SpringBootTest
-public class myi18NControllerTestES {
+@ActiveProfiles("UAT")
+public class DataSourceServiceTest {
 
     @Autowired
-    Myi18NController myi18NController;
+    DataSourceController myDataSourceController;
 
     @Test
-    void sayHello(){
-        System.out.println(myi18NController.sayHello());
+    public void getDataSourceString()
+    {
+        System.out.println(myDataSourceController.getDataSourceString());
     }
+
 }
